@@ -1,39 +1,6 @@
 # you can add imports but you should not rely on libraries that are not already provided in "requirements.txt #
 from collections import deque
 
-
-def breadth_first_search(stack):
-    flip_sequence = []
-    # --- v ADD YOUR CODE HERE v --- #
-    temp = stack.copy()
-    for num in range(len(temp.order) - 1, -1, -1):
-        found = False
-
-        for x in range(len(temp.order)):
-            if found:
-                continue
-
-                return flip_sequence
-            if num == temp.order[x]:
-                found = True
-                if x != 0:
-                    temp.flip_stack(x + 1)
-                    flip_sequence.append(x + 1)
-
-                if temp.orientations[x] == 1:
-                    temp.flip_stack(1)
-                    flip_sequence.append(1)
-
-                temp.flip_stack(num + 1)
-                flip_sequence.append(num + 1)
-
-                continue
-
-
-    return flip_sequence
-    # ---------------------------- #
-
-
 def depth_first_search(stack):
     flip_sequence = []
     # # --- v ADD YOUR CODE HERE v --- #
