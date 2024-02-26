@@ -16,7 +16,7 @@ The correct outcome is:
 1 1
 2 1
 3 1
-I solved this problem using both breadth and depth first search methods.
+I solved this problem using depth first search.
 
 
 Project 2: I continued Project 1, however this time I used A* search to solve efficiently. 
